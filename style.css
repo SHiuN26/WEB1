@@ -1,4 +1,26 @@
 h1{
-    color:blue;
+    color: #e7a92c;
     font-size: 60px;
+}
+nav{
+    background-color:#000;
+    text-align: center;/*css文字對齊*/
+    font-size: 0px;
+}
+nav a{
+    color: #fff;
+    text-decoration:none ;/*css文字裝飾*/
+    display:inline-block ;/*display屬性指定是否/如何顯示元素*/
+    padding: 6px 50px;/*與四周間距 6px為上下距離、20px為左右距離*/
+    font-size: 16px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: #ffaa00;/*滑鼠經過 nav區塊裡的a元素背景會變色，變色範圍與padding有關*/
+}
+p{
+    color:#999;
+    margin-bottom: 30px;/*四個邊的邊距*/
 }
