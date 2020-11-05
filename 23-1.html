@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- 媒體查詢RWD基礎 -->
+    <!-- 媒體查詢RWD基礎，根據不同裝置解析度呈現不同畫面設定-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
         .shn{
             width: 100%;
             height: 300px;
+            display: none;
 
         }
         .s1{
@@ -27,8 +28,13 @@
         /* @media screen (條件) and (條件){ }*/
         @media screen and (min-width:768px){
             .shn{
-                width: 50%;
-                float: left;
+               background-color: #f00;
+               display: block; 
+            }
+         }
+        @media screen and (min-width:1200px){
+            .shn{
+               background-color: #00f;
             }
          }
 
@@ -37,7 +43,7 @@
 </head>
 <body>
     <div class="shn s1">s1</div>
-    <div class="shn s2">s2</div>
+  
     
 </body>
 </html>
