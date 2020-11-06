@@ -14,20 +14,33 @@
         .wrap{
             width: 100%;
             max-width: 1400px;
+            margin: auto;
         }
         .item{
             margin:0px 10px 20px;
             background-color: #ffa;
             padding: 10px;
         }
+
+        @media screen and (min-width: 768px){
+            .wrap{
+                display: flex;
+            }
+            .item{
+                width: 500px; 如果沒有補充此寬度設定，當item內容有少時，欄位就會變小出現故障
+            }
+        }
     </style>
 </head>
 <body>
     
     <div class="wrap">
-        <div class="item"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iusto ex magnam sit laboriosam eaque consequatur nesciunt, ut natus officia, sunt rerum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
-        <div class="item"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iusto ex magnam sit laboriosam eaque consequatur nesciunt, ut natus officia, sunt rerum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
-        <div class="item"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iusto ex magnam sit laboriosam eaque consequatur nesciunt, ut natus officia, sunt rerum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
+        <div class="item">
+            <h3>title</h3><p>Lorum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
+        <div class="item">
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iusto ex magnam sit laboriosam eaque consequatur nesciunt, ut natus officia, sunt rerum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
+        <div class="item">
+            <h3>title</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore iusto ex magnam sit laboriosam eaque consequatur nesciunt, ut natus officia, sunt rerum nihil rem a at assumenda atque fugit necessitatibus!</p></div>
     </div>
 </body>
 </html>
